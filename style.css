@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --primary-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    /* background */
+    background-image: url(./new-year.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--primary-color);
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0 20px;
+    overflow: hidden;
+
+}
+
+h1 {
+    font-size: 60px;
+    margin: -80px 0 40px;
+}
+
+.count-down {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.timer h2 {
+    margin: 0 0 20px;
+    font-size: 4rem;
+}
+
+
+.message {
+    font-size: 60px;
+    font-size: bold;
+}
+
+
+small {
+    padding-top: 5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: block;
+}
+
+.year {
+    font-size: 200px;
+    z-index: -1;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .timer {
+        margin: 5px;
+    }
+
+    .timer h2 {
+        font-size: 30px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .timer small {
+        font-size: 12px;
+    }
+
+    .year {
+        font-size: 100px;
+
+    }
+
+    .message {
+        font-size: 25px;
+    }
+}
