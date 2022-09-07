@@ -15,11 +15,10 @@ body {
     font-size: 16px;
     line-height: 1.8;
     /* background */
-    background-image: url(./new-year.jpg);
+    background-color: black;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: var(--primary-color);
+    background-size: 100% 100%;
+    color: white;
     /* layout */
     display: flex;
     flex-direction: column;
